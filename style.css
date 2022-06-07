@@ -50,6 +50,32 @@ nav.primary-nav {
     }
 }
 
+/*Single Post Styles*/
+.post-template {
+    margin: 3rem auto;
+}
+
+/*Stories*/
+.temp-container {
+    padding: 1rem 2rem;
+    box-shadow: 0px 0px 12px rgb(0 0 0 / 15%);
+    border-radius: 33px;
+}
+.template-heading {
+    text-align: center;
+}
+.story-template {
+    margin: 3rem 0rem;
+}
+.acf-content ul {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+
 /*Footer Styles*/
 footer.footer {
     background-color: rgba(179, 179, 179, 0.1);
@@ -57,7 +83,7 @@ footer.footer {
 }
 
 footer.footer .container {
-    max-width: 1220px;
+    max-width: 1365px;
 }
 .hold-footer-logo {
     display: flex;
