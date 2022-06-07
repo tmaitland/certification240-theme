@@ -8,10 +8,22 @@
 get_header(); ?>
 
 <main id="site-content" class="site-content" role="main"> 
-    <div id="story-template" class="temp-content story-template">
+    <div id="resource-template" class="temp-content resource-template">
     <?php get_template_part('./template-parts/custom-header'); ?>
-        <div class="temp container">
-            <div class="row">
+        <div class="temp container-fluid">
+            <div class="temp-content">
+                <?php if( have_rows('resources') ): ?>
+                    <ul>
+                    <?php while ( have_rows('resources') ) : the_row(); ?>
+                        <li><?php echo the_sub_field('detail_text'); ?></li>
+                    <?php endwhile; ?>
+                    </ul>
+                <?php else : ?>
+                    <p>No rows found.</p>
+                <?php endif; ?>
+            
+            </div>
+            <div class="block-content">
             <?php
                 if ( have_posts() ) {
                     wp_reset_query();

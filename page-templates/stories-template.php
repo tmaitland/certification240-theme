@@ -11,7 +11,7 @@ get_header(); ?>
 <main id="site-content" class="site-content" role="main"> 
     <div id="story-template" class="temp-content story-template">
     <?php get_template_part('./template-parts/custom-header'); ?>
-        <div class="temp container">
+        <div class="temp container-fluid">
             <div class="row acf-content">
 
              <?php  
@@ -42,7 +42,7 @@ get_header(); ?>
 
                 <!-- <//?php var_dump($post_objects); ?> -->
             </div>
-            <div class="row block-content">                
+            <div class="block-content">                
                  <?php
                     if ( have_posts() ) {
                         wp_reset_query();
