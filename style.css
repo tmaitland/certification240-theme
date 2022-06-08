@@ -44,10 +44,31 @@ nav.primary-nav {
     font-weight: 700;
     margin: 0rem 0.5rem;
 }
+.btn.nav-button {
+  cursor: pointer;
+  border-radius: 25px;
+  background: #f37073;
+  color: #fff;
+  padding: 0.5rem 2rem;
+}
+.btn.nav-button:hover {
+    background: rgb(75, 75, 75);
+}
+
+
 @media (max-width: 992px) {
     .mobile-logo {
         display: block;
     }
+    .custom-logo {
+        display: none;
+    }
+    .navbar-collapse.hide {
+        display: none;
+    }
+}
+@media (max-width: 1560px) {
+
 }
 
 /*Single Post Styles*/

@@ -40,10 +40,10 @@
         <?php
         }
           ?>
-      <button class="navbar-toggler align-self-stretch" type="button" data-toggle="collapse" data-target="#siteMainNav" aria-controls="siteMainNav" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-lg fa-bars"></i>
+      <button class="navbar-toggler align-self-stretch" type="button" data-bs-toggle="collapse" data-bs-target="#siteMainNav" aria-controls="siteMainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fas fa-lg fa-bars"></i></span>
       </button>
-      <div class="collapse navbar-collapse links container" id="siteMainNav">
+      <div class="links container collapse navbar-collapse hide" id="siteMainNav">
             <?php 
               if(has_custom_logo()){
               the_custom_logo();
@@ -73,8 +73,8 @@
                     wp_nav_menu($args);
                   }
                 ?>
+        <a href="<?php echo get_theme_mod('nav_btn_link'); ?>" class="btn nav-button"><?php echo get_theme_mod('nav_btn_title'); ?></a>
         </div>
-        <button class="btn btn-secondary"></button>
     </nav>
 
 </header>

@@ -38,6 +38,7 @@
 
    function cert240_enqueue_scripts(){
       wp_enqueue_script( 'cert-bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', [], time(), true );
+      wp_enqueue_script( 'cert-custom-js', get_template_directory_uri() . '/assets/js/custom/general.js', [], time(), true );
    }
 
    // setup
@@ -56,6 +57,6 @@
 
    
 
-   // Customizer additions.
-//    require get_template_directory() . '/classes/uf-experts-customize.php';
-//    new UF_Experts_Customize();
+  // Customizer additions
+  include(get_theme_file_path('/classes/cert-240-customize.php'));
+   new Cert_240_Customize();
