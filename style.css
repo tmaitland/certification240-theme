@@ -104,7 +104,9 @@ nav.primary-nav {
 /*Footer Styles*/
 footer.footer {
     background-color: rgba(179, 179, 179, 0.1);
-    padding: 3rem 0rem;
+    padding: 6rem 1rem 3rem;
+    position: relative;
+    border-radius: 160%/55% 9% 0% 0%;
 }
 
 footer.footer .container {
@@ -115,7 +117,10 @@ footer.footer .container {
     justify-content: flex-end;
 }
 #menu-footer-menu-1 .menu-item a {
-    color: #000000;
-    font-weight: 400;
+    color: #707070;
+    font-weight: 600;
+}
+.year-copy {
+    text-align: center;
 }
 

@@ -16,6 +16,10 @@
                 ?>
             </div>
         </div>
+        <div class="year-copy"> &copy;<span><?php echo date('Y'); ?></span> - 240Tutoring, Inc.</div>
     </div>
     <?php wp_footer(); ?>  
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
 </footer>

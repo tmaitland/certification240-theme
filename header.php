@@ -18,6 +18,7 @@
         bloginfo('name'); echo " - "; echo get_theme_mod('site_meta_description');
     }
     ?>" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
  <?php wp_head(); ?>
 </head>
 
