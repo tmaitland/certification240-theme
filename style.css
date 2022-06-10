@@ -39,10 +39,30 @@ nav.primary-nav {
 .links.container {
     max-width: 1365px;
 }
-.nav-item .nav-link {
+.menu-main-menu-container {
+    width: 100%;
+    margin-bottom: 0px
+}
+.menu-main-menu-container ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 0px;
+    margin-left: 2rem;
+    width: 100%;
+}
+.menu-main-menu-container ul li {
+    margin-bottom: 6px;
+    margin-right: 2rem;
     color: #707070;
-    font-weight: 700;
-    margin: 0rem 0.5rem;
+    font-weight: 600;
+}
+.menu-main-menu-container ul li a {
+    color: #707070;
+}
+.menu-main-menu-container ul li a:hover {
+    text-decoration: none;
+    color: #000;
 }
 .btn.nav-button {
   cursor: pointer;
@@ -112,9 +132,9 @@ footer.footer {
 footer.footer .container {
     max-width: 1365px;
 }
-footer.footer .hold-links .menu ul li a {
-    color: #707070;
-    font-weight: 600;
+footer.footer .hold-links ul li a {
+    color: #000;
+    font-weight: 500;
 }
 .hold-footer-logo {
     display: flex;

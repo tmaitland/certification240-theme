@@ -54,26 +54,7 @@
               <?php
               }
               ?>
-                <?php 
-                  if(has_nav_menu('main')) {
-                    $args = [
-                      'menu_class'        => 'navbar-nav w-100 menu-main',
-                      'container'         => '',
-                      'container_class'   => 'collapse navbar-collapse align-items-lg-stretch',
-                      'container_id'      => 'siteMainNav',
-                      'fallback_cb'       => 'wp_page_menu',
-                      'echo'              => true,
-                      'before'            => '',
-                      'after'             => '',
-                      'link_before'       => '',
-                      'link_after'        => '',
-                      'items_wrap'        => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-                      'depth'             => 0,
-                      'walker'            => new Certification_240_Custom_Nav_Walker()
-                    ];
-                    wp_nav_menu($args);
-                  }
-                ?>
+                <?php wp_nav_menu(array("theme_location" => "main")); ?>  
         <a href="<?php echo get_theme_mod('nav_btn_link'); ?>" class="btn nav-button"><?php echo get_theme_mod('nav_btn_title'); ?></a>
         </div>
     </nav>
