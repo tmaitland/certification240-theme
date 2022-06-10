@@ -112,13 +112,13 @@ footer.footer {
 footer.footer .container {
     max-width: 1365px;
 }
+footer.footer .hold-links .menu ul li a {
+    color: #707070;
+    font-weight: 600;
+}
 .hold-footer-logo {
     display: flex;
     justify-content: flex-end;
-}
-#menu-footer-menu-1 .menu-item a {
-    color: #707070;
-    font-weight: 600;
 }
 .year-copy {
     text-align: center;
