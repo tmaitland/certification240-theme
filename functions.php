@@ -58,5 +58,5 @@
    
 
   // Customizer additions
-  include(get_theme_file_path('/classes/cert-240-customize.php'));
-   new Cert_240_Customize();
+//   include(get_theme_file_path('/classes/cert-240-customize.php'));
+   // new Cert_240_Customize();
