@@ -64,6 +64,9 @@ nav.primary-nav {
     text-decoration: none;
     color: #000;
 }
+.btn.mobile-nav-button {
+    display: none;
+}
 .btn.nav-button {
   cursor: pointer;
   border-radius: 25px;
@@ -76,7 +79,7 @@ nav.primary-nav {
 }
 
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .mobile-logo {
         display: block;
     }
@@ -86,9 +89,28 @@ nav.primary-nav {
     .navbar-collapse.hide {
         display: none;
     }
+    .menu-main-menu-container ul {
+        flex-direction: column;
+        margin-left: 0rem;
+    }
+    .btn.mobile-nav-button {
+        display: block;
+        cursor: pointer;
+        border-radius: 25px;
+        background: #f37073;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        margin-left: auto;
+        font-size: 13px;
+    }
+    .btn.nav-button {
+        display: none;
+    }
 }
-@media (max-width: 1560px) {
 
+.site-content .row .col-lg-12 {
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 /*Single Post Styles*/

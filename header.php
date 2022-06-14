@@ -41,6 +41,7 @@
         <?php
         }
           ?>
+      <a href="<?php echo get_theme_mod('nav_btn_link'); ?>" class="btn mobile-nav-button"><?php echo get_theme_mod('nav_btn_title'); ?></a>
       <button class="navbar-toggler align-self-stretch" type="button" data-bs-toggle="collapse" data-bs-target="#siteMainNav" aria-controls="siteMainNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"><i class="fas fa-lg fa-bars"></i></span>
       </button>
